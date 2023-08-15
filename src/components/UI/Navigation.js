@@ -20,11 +20,6 @@ const Navigation = () => {
     setShow(false);
   };
 
-  const gymsDropdown = (
-    <span id="nav-gyms">
-      Gyms <FaAngleDown />
-    </span>
-  );
   const aboutDropdown = (
     <span id="nav-about">
       About <FaAngleDown />
