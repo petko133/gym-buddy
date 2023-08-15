@@ -1,0 +1,134 @@
+.background{
+	z-index: -5;
+	background-color: black;
+}
+
+.container {
+	z-index: -5;
+	color: white;
+	padding: 5rem 0;
+  margin-bottom: 5rem;
+}
+
+.image {
+	border: 5px solid white;
+	transform: rotate(-3deg);
+  height: 500px;
+	margin-left: 40px;
+}
+
+.text{
+	font-size: 1.1rem;
+	color: gray;
+}
+
+.icons-col {
+	margin-bottom: 1rem;
+	vertical-align: middle;
+	display: flex;
+  text-align: start;
+}
+
+.icons {
+  height: 64px;
+}
+
+.icons-text {
+	vertical-align: middle;
+	margin: auto;
+	margin-left: 1rem;
+  font-weight: 600;
+}
+
+.find {	
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+  width: 45%;
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0.6rem;
+  background: url('../../../assets/images/cyan.png');
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1199px) {
+  .find {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .find {
+		margin-top: 2rem;
+    width: 40%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .find {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 498px) {
+  .find {
+    width: 70%;
+  }
+}
+
+.button {
+	margin-top: 2rem;
+  /* background-color: transparent;   */
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 14px 20px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover,
+.button:active {
+  outline: 0;
+}
+
+.button:hover {
+	color: black;
+	/* border-width: 2px; */
+  background-color: white;
+  cursor: pointer;
+}
+
+.button:before {
+  background-color: rgba(255, 255, 255, 0.274);
+  content: '';
+  height: calc(100% + 3px);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  transition: background-color 200ms ease-in;
+  width: 100%;
+  z-index: 1;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  right: -10px;
+  bottom: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.815);
+  display: block;
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 16px 32px;
+  }
+}

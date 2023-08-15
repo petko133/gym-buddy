@@ -1,0 +1,25 @@
+.cards {
+  color: black;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-radius: 20px 0px;
+  background: white;
+  z-index: 4;
+  position: relative;
+  bottom: 40px;
+  width: 18rem;
+	box-shadow: 0 6px 16px -4px gray;
+}
+
+.cards:hover{
+	transition: 0.3s;
+	color: white;
+	background-color: black;
+}
+
+.icon{
+	margin: 1rem 0;
+	color: rgba(129, 230, 217, 1);
+}

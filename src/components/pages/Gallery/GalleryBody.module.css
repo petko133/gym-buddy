@@ -1,0 +1,22 @@
+.cards {
+  margin-bottom: 1rem;
+  color: white;
+  background-size: 800px;
+  background-repeat: no-repeat;
+  background-position: bottom 20% right 70%;
+  height: 300px;
+}
+
+.cards:hover {
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+
+.modall {
+  margin-top: 5rem;
+  text-align: center;
+  min-width: 20%;
+  max-width: 70%;
+  --bs-modal-bg: none;
+  --bs-modal-border-color: none;
+}

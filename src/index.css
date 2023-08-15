@@ -1,3 +1,8 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +15,52 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+button {
+  border-width: 0;
+}
+
+.carousel-control-next {
+  right: -120px;
+}
+
+.carousel-control-prev {
+  left: -120px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url('./assets/images/testimonials/left.png') !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url('./assets/images/testimonials/right.png') !important;
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+.form-control {
+  color: white;
+  background-color: black !important;
+  margin-bottom: 1rem;
+}
+
+.form-control:focus {
+  color: white;
+}
+
+.form-control::placeholder {
+  color: rgb(131, 131, 131) !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
 }

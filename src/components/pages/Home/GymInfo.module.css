@@ -1,0 +1,115 @@
+.container {
+  margin-bottom: 10rem;
+}
+
+.image {
+  height: 500px;
+}
+
+.icons-col {
+  text-align: center;
+}
+
+.icons {
+  height: 64px;
+}
+
+.icons-text {
+  font-weight: 600;
+}
+
+.find {
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+  width: 45%;
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0.6rem;
+  background: url('../../../assets/images/cyan.png');
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1199px) {
+  .find {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .find {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .find {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 498px) {
+  .find {
+    width: 70%;
+  }
+}
+
+.button {
+	margin-top: 2rem;
+  background-color: transparent;  
+  box-sizing: border-box;
+  color: white;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 14px 20px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover,
+.button:active {
+  outline: 0;
+}
+
+.button:hover {
+	color: black;
+	border-width: 2px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button:before {
+  background-color: rgba(0, 0, 0, 0.815);
+  content: '';
+  height: calc(100% + 3px);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  transition: background-color 200ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  right: -10px;
+  bottom: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.815);
+  display: block;
+  z-index: -2;
+}
+
+.button:hover:before {	
+  background-color: white;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 16px 32px;
+  }
+}

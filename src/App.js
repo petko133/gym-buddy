@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Navigation from './components/UI/Navigation';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import data from './assets/data/data';
+import Footer from './components/UI/Footer';
+import Gallery from './pages/Gallery';
+import Schedule from './pages/Schedule';
 
 function App() {
+  const [classesData, setData] = useState(data);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navigation />
+      <Routes>
+        <Route exact path="/" element={<Home classes={classesData} />}></Route>
+        <Route exact path="/gallery" element={<Gallery />}></Route>
+        <Route exact path="/schedule" element={<Schedule />}></Route>
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 

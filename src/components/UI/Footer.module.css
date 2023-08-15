@@ -1,0 +1,14 @@
+.background {
+  padding: 3rem 0;
+  color: white;
+  background-color: black;
+}
+
+.li-item {
+  list-style-type: none;
+}
+
+.li-item a {
+  color: #e7e7e7;
+  text-decoration: none;
+}

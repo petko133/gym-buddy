@@ -1,38 +1,26 @@
-.App {
-  text-align: center;
+body,
+html {
+  font-family: 'Kanit', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+	background-color: black!important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-link{
+	color: gainsboro;
+	font-size: 1.25rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+	color: blue;
+	top: 35px;
 }
 
-.App-link {
-  color: #61dafb;
+.dropdown-menu{
+	max-width: 35%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dropdown-toggle::after {
+  display: none !important; 
 }

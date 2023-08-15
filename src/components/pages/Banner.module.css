@@ -1,0 +1,9 @@
+.background {
+  background-image: url('../../assets/images/banner/banner-bg.jpg');
+}
+
+.container {
+  text-align: center;
+  color: white;
+  padding-top: 30rem;
+}
