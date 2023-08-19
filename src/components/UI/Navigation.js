@@ -50,7 +50,7 @@ const Navigation = () => {
             <Nav.Link className={classes['nav-margin']} href="/schedule">
               Schedule
             </Nav.Link>
-            <Nav.Link className={classes['nav-margin']} href="/#pricing">
+            <Nav.Link className={classes['nav-margin']} href="/pricing">
               Pricing
             </Nav.Link>
             <NavDropdown

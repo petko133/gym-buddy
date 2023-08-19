@@ -7,6 +7,7 @@ import data from './assets/data/data';
 import Footer from './components/UI/Footer';
 import Gallery from './pages/Gallery';
 import Schedule from './pages/Schedule';
+import Pricing from './pages/Pricing';
 
 function App() {
   const [classesData, setData] = useState(data);
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/" element={<Home classes={classesData} />}></Route>
         <Route exact path="/gallery" element={<Gallery />}></Route>
         <Route exact path="/schedule" element={<Schedule />}></Route>
+        <Route exact path="/pricing" element={<Pricing />}></Route>
       </Routes>
       <Footer />
     </Router>
